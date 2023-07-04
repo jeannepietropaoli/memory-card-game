@@ -42,16 +42,44 @@
 
 @keyframes bounce {
 	0%{
-		transform:         translateY(0);
+        transform: scaleY(1);
+		transform: translateY(0);
 	}
-    25% {
-        transform:      translateY(-40px);
+
+    15% {
+        transform: scaleY(0.75);
     }
-    45% {
-        transform:      translateY(-45px);
+    25% {
+        transform: scaleY(1);
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(-45px);
     }
 	60% {
-		transform:         translateY(-50px);
+		transform: translateY(-50px);
+	}
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes jump {
+	0%{
+		transform: translateY(0);
+	}
+    25% {
+
+        transform: translateY(-40px);
+    }
+    45% {
+        transform: translateY(-45px);
+    }
+	60% {
+		transform: translateY(-50px);
 	}
     100% {
         transform: translateY(0);
