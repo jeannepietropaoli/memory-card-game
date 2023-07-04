@@ -1,12 +1,25 @@
 {
   "files": {
-    "main.css": "/memory-card-game/static/css/main.31d6cfe0.css",
-    "main.js": "/memory-card-game/static/js/main.c32b6935.js",
+    "main.css": "/memory-card-game/static/css/main.62edb872.css",
+    "main.js": "/memory-card-game/static/js/main.e40663b8.js",
+    "static/media/bearger.png": "/memory-card-game/static/media/bearger.e4fb67480acfbd8ad494.png",
+    "static/media/fully-poseable.png": "/memory-card-game/static/media/fully-poseable.fe84d3a734e4e3b78c69.png",
+    "static/media/power-player.png": "/memory-card-game/static/media/power-player.ae19540fac2ac3f2e4df.png",
+    "static/media/muddy-explorer.png": "/memory-card-game/static/media/muddy-explorer.23d13c1c4e2258b56336.png",
+    "static/media/camel-explorer.png": "/memory-card-game/static/media/camel-explorer.081075dc86fe0f310f20.png",
+    "static/media/wizard.png": "/memory-card-game/static/media/wizard.c872d870259b2ababe12.png",
+    "static/media/jazzercise.png": "/memory-card-game/static/media/jazzercise.a3aaf300f2f543e15dbc.png",
+    "static/media/paladin.png": "/memory-card-game/static/media/paladin.d6d0a222dea0b9f8288a.png",
+    "static/media/ufg.png": "/memory-card-game/static/media/ufg.71dc66619fb5bf85bcaf.png",
+    "static/media/snowman.png": "/memory-card-game/static/media/snowman.630eed03481867da732a.png",
+    "static/media/rookie.png": "/memory-card-game/static/media/rookie.4204f080ac776cb579a1.png",
+    "static/media/sparkle-whal.png": "/memory-card-game/static/media/sparkle-whal.b6f9deaf330a848476bf.png",
     "index.html": "/memory-card-game/index.html",
-    "main.c32b6935.js.map": "/memory-card-game/static/js/main.c32b6935.js.map"
+    "main.62edb872.css.map": "/memory-card-game/static/css/main.62edb872.css.map",
+    "main.e40663b8.js.map": "/memory-card-game/static/js/main.e40663b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.c32b6935.js"
+    "static/css/main.62edb872.css",
+    "static/js/main.e40663b8.js"
   ]
 }
