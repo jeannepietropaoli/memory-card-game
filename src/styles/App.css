@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+.app--title {
+    color: white;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 100px;
+    text-shadow: -1px 1px 0px #FD42F4, -2px 2px 0px #FD42F4, -4px 3px 0px #FD42F4, -4px 4px 0px #FD42F4, -6px 6px 0px #F8CC31, -8px 8px 0px #F8CC31, -9px 9px 0px #F8CC31;
+}
+
+.app--instructions {
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.cardGrid {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(3, 250px);
+    grid-template-columns: repeat(auto-fit,minmax(200px, 280px));
+    grid-auto-rows: 250px;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+}
