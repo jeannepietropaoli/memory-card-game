@@ -13,7 +13,7 @@ function App() {
   })
 
   const [heldCards, setHeldCards] = React.useState([])
-  const [gameOver, setGameOver] = React.useState(true)
+  const [gameOver, setGameOver] = React.useState(false)
   const [score, setScore] = React.useState(0)
 
   function areAllCardsHeld() {

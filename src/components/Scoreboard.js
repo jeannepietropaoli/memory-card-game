@@ -4,6 +4,10 @@ import "../styles/Scoreboard.css"
 
 export default function Scoreboard(props) {
     React.useEffect(() => {
+        if(record === null || props.score > record) {
+            localStorage.setItem("record", JSON.stringify(props.score))
+            setRecord(props.score)
+        }
         if (isExploding) {
             const timeoutId = setTimeout(() => {
                 console.log('off')
@@ -16,8 +20,10 @@ export default function Scoreboard(props) {
         }
     }, []);
 
-    const [isExploding, setIsExploding] = React.useState(true/* props.perfectScore */);
-    const text = props.perfectScore ? "You won !" : "Game over !"
+    const [isExploding, setIsExploding] = React.useState(props.perfectScore);
+    const [record, setRecord] = React.useState(JSON.parse(localStorage.getItem("record")) || null)
+    const endGameText = props.perfectScore ? "You won !" : "Game over !"
+    const scoreText = `Your score is ${props.score}/${props.maxScore}`
 
     const confettiProps = {
         force: 0.8,
@@ -33,9 +39,10 @@ export default function Scoreboard(props) {
             <div className="modal-container">
                 <div className="modal">
                     <div>
-                        <p className="end-game-description">{text}</p>
-                        <p className="score">Your score is {props.score}/{props.maxScore}</p>
+                        <p className="end-game-description">{endGameText}</p>
+                        <p className="score">{scoreText}</p>
                         {isExploding && <ConfettiExplosion {...confettiProps} />}
+                        {record === props.score && <p>New record !</p>}
                     </div>
                     <button className="play-again-button" onClick={props.playAgain}>Play again</button>
                 </div>
