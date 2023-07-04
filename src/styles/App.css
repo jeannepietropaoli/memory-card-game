@@ -6,6 +6,7 @@
     align-items: center;
     width: 100%;
     font-family: 'Asap Condensed', sans-serif;
+    position: relative;
 }
 
 .app--title {
@@ -32,4 +33,12 @@
     column-gap: 20px;
     row-gap: 20px;
     justify-content: center;
+}
+
+.credits {
+    position: absolute;
+    bottom: -20px;
+    font-size: 11px;
+    color: white;
+    background-color: #FD42F4;
 }

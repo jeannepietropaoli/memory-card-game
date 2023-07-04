@@ -62,9 +62,10 @@ function App() {
   return (
     <div className="app">
       <h1 className='app--title'>FALL GUYS' MEMORY !</h1>
-      <h3 className='app--instructions'>- Pick a card but don't pick it twice or you loose ! -</h3>
+      <h3 className='app--instructions'>- Pick a card but don't pick the same character twice or you loose ! -</h3>
       <div className='cardGrid'>{shuffleArray(cardsElements)}</div>
       {gameOver && <Scoreboard perfectScore={isPerfectScore()} score={score} playAgain={playAgain} maxScore={cardsData.length} />}
+      <span className='credits'>Credits : content provided on this website is FanArt. All characters are property of Mediatonic, the developper of the game</span>
     </div>
   );
 }
