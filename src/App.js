@@ -7,7 +7,6 @@ import Scoreboard from './components/Scoreboard';
 function App() {
   React.useEffect(() => {
     if(areAllCardsHeld()) {
-      console.log('you won')
       setGameOver(true)
     }
   })

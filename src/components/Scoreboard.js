@@ -10,7 +10,6 @@ export default function Scoreboard(props) {
         }
         if (isExploding) {
             const timeoutId = setTimeout(() => {
-                console.log('off')
                 setIsExploding(false);
             }, confettiProps.duration);
 
