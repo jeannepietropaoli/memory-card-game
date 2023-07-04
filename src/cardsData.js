@@ -2,7 +2,6 @@ import bearger from "./assets/characters/bearger.png"
 import camelExplorer from "./assets/characters/camel-explorer.png"
 import fullyPoseable from "./assets/characters/fully-poseable.png"
 import jazzercise from "./assets/characters/jazzercise.png"
-import laraCroft from "./assets/characters/lara-croft.png"
 import muddyExplorer from "./assets/characters/muddy-explorer.png"
 import paladin from "./assets/characters/paladin.png"
 import powerPlayer from "./assets/characters/power-player.png"
@@ -11,58 +10,67 @@ import snowman from "./assets/characters/snowman.png"
 import sparkleWhal from "./assets/characters/sparkle-whal.png"
 import ufg from "./assets/characters/ufg.png"
 import wizard from "./assets/characters/wizard.png"
+import { nanoid } from "nanoid"
 
 export const cardsData = [
     {
         name : "Bearger",
-        url : bearger
+        url : bearger,
+        id : nanoid()
     },
     {
         name : "Camel explorer",
-        url : camelExplorer
+        url : camelExplorer,
+        id : nanoid()
     },
     {
         name : "Fully poseable",
-        url : fullyPoseable
+        url : fullyPoseable,
+        id : nanoid()
     },
     {
         name : "Jazzercize",
-        url : jazzercise
+        url : jazzercise,
+        id : nanoid()
     },
-    /* {
-        name : "Lara Croft",
-        url : laraCroft
-    }, */
     {
         name : "Muddy explorer",
-        url : muddyExplorer
+        url : muddyExplorer,
+        id : nanoid()
     },
     {
         name : "Paladin",
-        url : paladin
+        url : paladin,
+        id : nanoid()
     },
     {
         name : "Power player",
-        url : powerPlayer
+        url : powerPlayer,
+        id : nanoid()
     },
     {
         name : "Rookie",
-        url : rookie
+        url : rookie,
+        id : nanoid()
     },
     {
         name : "Snowman",
-        url : snowman
+        url : snowman,
+        id : nanoid()
     },
     {
         name : "Sparkle whal",
-        url : sparkleWhal
+        url : sparkleWhal,
+        id : nanoid()
     },
     {
         name : "U.F.G",
-        url : ufg
+        url : ufg,
+        id : nanoid()
     },
     {
         name : "Wizard",
-        url : wizard
+        url : wizard,
+        id : nanoid()
     },
 ]
